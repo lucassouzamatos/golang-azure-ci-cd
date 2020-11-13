@@ -30,7 +30,7 @@ jobs:
         fi
 
     - name: Build
-      run: go build Handlers.go .
+      run: go build Handlers.go
     
     - name: 'Run Azure Functions Action'
       uses: Azure/functions-action@v1
