@@ -1,19 +1,20 @@
 # Golang Azure CI/CD 
 <p align="center">
-  <img src="./header.png" />
+  <img width="300px" src="./header.png" />
 </p>
 <br />
 
-Exemplo de configuração CI/CD utilizando Azure Functions customizadas para Golang.
+<i>Exemplo de configuração CI/CD utilizando Azure Functions customizadas para Golang.</i>
 
-## Passos 
+### Demonstração dos passos 
 <p align="center">
   <img src="./build.png" />
 </p>
 <br />
 
-## Configuração
+### Configuração
+As configurações necessitam do nome do aplicativo na Azure, do caminho do pacote e publish profile, que devem ser pré configurados e inseridos através do secrets (publish profile) e através das variáveis locais de ambiente. 
 <p align="center">
-  <img src="./configuration.png" />
+  <img width="700px" src="./configuration.png" />
 </p>
 <br />
