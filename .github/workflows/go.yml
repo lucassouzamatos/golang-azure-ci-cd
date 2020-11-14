@@ -16,15 +16,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - name: Set up Go 1.x
+    - name: 🚀 Set up Go 1.x
       uses: actions/setup-go@v2
       with:
         go-version: ^1.13
 
-    - name: Check out code into the Go module directory
+    - name: 🔎 Check out code into the Go module directory
       uses: actions/checkout@v2
 
-    - name: Get dependencies
+    - name: 🔎 Get dependencies
       run: |
         go get -v -t -d ./...
         if [ -f Gopkg.toml ]; then
@@ -32,10 +32,10 @@ jobs:
             dep ensure
         fi
 
-    - name: Build
+    - name: 🔨 Build
       run: go build Handlers.go
     
-    - name: 'Run Azure Functions Action'
+    - name: 🤞 Run Azure Functions Action
       uses: Azure/functions-action@v1
       id: fa
       with:
